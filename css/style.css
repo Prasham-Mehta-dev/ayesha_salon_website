@@ -1,0 +1,514 @@
+/*========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+
+body {
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo{
+  text-transform: uppercase;
+  color: #222222;
+  font-family: 'Sansita', cursive;
+  padding: 1% 0;
+  font-size: 1.5rem;
+  /* font-family: 'Sansita Swashed', cursive; */
+  font-family: 'Yellowtail', cursive;
+  font-weight: 500;
+}
+
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+
+.image-wrapper{
+  background: url('https://github.com/deadpool69420/images_repo/blob/main/salon_bg_1.jpg?raw=true');
+  no-repeat: center;
+  background-size: cover;
+  clear: both;
+  height: 50rem;
+  margin-bottom: 12rem;
+}
+
+.momentum_video{
+  background: url("https://github.com/deadpool69420/images_repo/blob/main/salon_momentum.jpg?raw=true");
+  no-repeat: center;
+  background-size: cover;
+  background-position: bottom;
+  height: 23rem;
+}
+
+.image_one{
+  grid-area: c1;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook1.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+}
+
+.image_two{
+  grid-area: c2;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook2.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50rem;
+  width: 20rem;
+}
+
+.image_three{
+  grid-area: c3;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook3.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+}
+
+.image_four{
+  grid-area: c4;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook4.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50rem;
+  width: 20rem;
+}
+
+.image_five{
+  grid-area: c5;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook5.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+}
+
+.image_six{
+  grid-area: c6;
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/lookbook6.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50rem;
+  width: 20rem;
+}
+
+.lookbook_images{
+  display: grid;
+  grid-template-areas: 'c1 c2 c3' 'c4 c2 c6' 'c4 c5 c6';
+  grid-gap: 1rem;
+  height: 70.5rem;
+}
+
+.offer_wrapper{
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/salon_offer_image.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 25rem;
+  clear: both;
+}
+
+.Styler-01{
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/Styler-01.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 30rem;
+  margin-right: 1%;
+}
+
+.Styler-02{
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/Styler-02.jpg?raw=true");
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  height: 30rem;
+  margin-right: 1%;
+}
+
+.Styler-03{
+  background-image: url("https://github.com/deadpool69420/images_repo/blob/main/Styler-03.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 30rem;
+}
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+
+header, div, section, div{
+  margin: 0 auto;
+}
+
+li, button{
+  display: inline-block;
+  padding: 0% 2%;
+}
+
+nav{
+  position: fixed;
+  background-color: white;
+  float: left;
+  width: 100%;
+  padding: 1% 4%;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10000;
+}
+
+.navbar.sticky{
+  background-color: rgba(148, 143, 143, 0.24);
+}
+
+.navbar-menu{
+  width: 95vw;
+  padding: 1% 0;
+}
+
+.fa-shopping-bag + span{
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+.small-wrapper{
+  width: 10%;
+  height: auto;
+  float: left;
+  display: inline;
+  padding: 1% 0;
+}
+
+.main_con{
+  position: relative;
+  top: 35%;
+  left: 15%;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-heading h1{
+  font-size: 5rem;
+  font-family: 'Quattrocento', serif;
+  font-weight: 100;
+  letter-spacing: 9px;
+}
+
+.main-heading h3{
+  padding: 2% 0;
+  letter-spacing: 5px;
+}
+
+.button{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 3rem;
+  text-transform: uppercase;
+}
+
+.discount_banner{
+  background-color: black;
+  width: 15rem;
+  height: 17rem;
+  float: left;
+}
+
+.banner_visit{
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid white;
+  letter-spacing: 2px;
+}
+
+.banner_coupon span{
+  font-size: 2rem;
+}
+
+.banner_coupon{
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.bt-two{
+  background-color: white;
+  color: black;
+  margin: 2.5rem 1rem 1rem 1rem;
+}
+
+.about, 
+.momentum_grid, 
+.stylists, 
+.offer_wrapper, 
+.lookbook
+{
+  width: 70%;
+  clear: both;
+}
+
+.feature{
+  width: 30%;
+  float: left;
+  margin-right: 2rem;  
+}
+
+.f3{
+  float: right;
+}
+
+.about_grid h2{
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  letter-spacing: 2px;
+}
+
+.about_grid p, .momentum p{
+  color: rgba(0,0,0, .6);
+  font-size: 1rem;
+}
+
+.about{
+  height: 20rem;
+  margin-bottom: 6rem;
+}
+
+.momentum{
+  background-color: rgb(240, 240, 240);
+  height: 30rem;
+  padding: 3rem 0;
+}
+
+.momentum_text, .momentum_video{
+  width: 50%;
+  float: left;
+}
+
+.momentum_text h2{
+  font-family: 'Quattrocento', serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-bottom: 1rem; 
+  line-height: 1.2;
+}
+
+.momentum p{
+  font-size: .9rem;
+  text-align: left;
+  width: 80%;
+  padding: 1rem 0;
+  line-height: 1.2;
+}
+
+.play-icon{
+  top: 42%;
+  position: relative;
+}
+
+.bt-three{
+  float: left;
+  margin-top: 2rem;
+  width: 13rem;
+}
+
+.name1{
+  position: absolute;
+  bottom: -5%;
+  left: 35%;
+  background-color: black;
+  color: white;
+}
+
+.name2{
+  position: absolute;
+  bottom: -5%;
+  left: 35%;
+  background-color: black;
+  color: white;
+}
+
+.name3{
+  position: absolute;
+  bottom: -5%;
+  left: 35%;
+  background-color: black;
+  color: white;
+}
+
+.image_overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.fab{
+  margin: 70% 3%;
+} 
+
+.stylists{
+  height: 40rem;
+  margin: 6rem auto;
+}
+
+
+
+.stylists_socialmedia{
+  width: 100%;
+  height: 100%;
+}
+
+.stylists_image{
+  width: 32%;
+  float: left;
+}
+
+.offer_wrapper{
+  padding: 10% 30% 10% 0;
+}
+
+/*
+========================================
+LAYOUT - NITTY GRITTY
+========================================
+*/
+
+.sidebar-booking{
+  margin: 0 0 0 5%;
+}
+
+.image_overlay{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image_overlay{
+  font-size: 10rem;
+  color: white;
+}
+
+.stylists_socialmedia{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+
+
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+.stylists_socialmedia:hover{
+  opacity: 1;
+  background: rgba(0,0,0, .3);
+  transform: translateY(-0.1rem);
+  transition: 0.5s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+  transform: translateY(-0.1rem);
+  background: rgba(13, 13, 37, 0.527);
+  transition: 0.5s; 
+}
