@@ -249,7 +249,7 @@ nav{
 }
 
 .navbar-menu{
-  width: 95vw;
+  width: 100%;
   padding: 1% 0;
 }
 
@@ -301,6 +301,7 @@ nav{
   width: 15rem;
   height: 17rem;
   float: left;
+  margin-top: 2rem;
 }
 
 .banner_visit{
